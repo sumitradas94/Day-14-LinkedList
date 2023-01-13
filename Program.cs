@@ -1,25 +1,24 @@
 ﻿using Day14LinkedList;
+using System.Collections.Generic;
 
-namespace day14LinkedLst
+namespace LinkedList
 {
-    class Program
+    public class Program
     {
-        public static void Main(String[] args)
+        public static void Main(string[] args)
         {
-            // LinkedList list = new LinkedList();
+            //Console.WriteLine("Welcome to Linked List Problem");
+            Insert insert = new Insert();
 
-            //Console.WriteLine("Current Size of the list is: " + list.getListSize());
+            Console.WriteLine("Current Size of the list is: " + insert.getListSize());
+            insert.insertNode(56);
 
-            // list.insertNode(56);
-            //list.insertNode(30);
-            // list.insertNode(70);
-            //list.printNodes();
+            insert.insertNode(70);
+            insert.printNodes();
 
-            AddingLinkedList list = new AddingLinkedList();
-            list.insertNode(30);
-            list.insertNode(70);
-            list.insertNode(56);
-            list.printNodes();
+            Console.WriteLine("Adding 30 at 1st Location");
+            insert.insertNth(30, 1);
+            insert.printNodes();
         }
     }
 }
