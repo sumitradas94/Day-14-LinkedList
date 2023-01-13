@@ -8,7 +8,7 @@ namespace LinkedList
         public static void Main(string[] args)
         {
             //Console.WriteLine("Welcome to Linked List Problem");
-            DeleteFirst list = new DeleteFirst();
+            DeleteLast list = new DeleteLast();
             Console.WriteLine("Current Size of the list is: " + list.getListSize());
 
             list.insertNode(56);
@@ -17,8 +17,8 @@ namespace LinkedList
             list.printNodes();
 
             Console.WriteLine("---------------");
-            Console.WriteLine("Deleting first node");
-            list.deleteFirstNode();
+            Console.WriteLine("Deleting Last node");
+            list.deleteLastNode();
             list.printNodes();
         }
     }
